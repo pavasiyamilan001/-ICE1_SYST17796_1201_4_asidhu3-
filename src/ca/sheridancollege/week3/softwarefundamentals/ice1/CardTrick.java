@@ -36,6 +36,12 @@ public class CardTrick {
         System.out.println("Enter Card Suit");
         // and search magicHand here
         //Then report the result here
+        
+        Card LuckyCard = new Card();
+        int random = (int)(Math.random() * 13 + 1);
+        System.out.println(LucyCard);
+        
+        
     }
     
 }

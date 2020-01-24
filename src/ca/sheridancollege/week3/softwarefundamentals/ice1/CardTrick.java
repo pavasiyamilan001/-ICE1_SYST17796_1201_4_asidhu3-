@@ -17,7 +17,10 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
-        Card luckycard = new Card( 12 , "Clubs");
+        Card luckycard = new Card();
+        luckycard.setValue() = 2;
+        luckycard.setSuit() = "Hearts";
+        System.out.println(luckycard.getSuit() +"\t"+luckycard.getValue());
         
         for (int i=0; i<magicHand.length; i++)
         {

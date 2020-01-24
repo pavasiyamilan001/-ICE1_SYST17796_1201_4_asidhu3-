@@ -39,8 +39,11 @@ public class CardTrick {
         
        
             Card luckCard = new Card();
-            UserC.setValue(3);
-            UserC.setSuit(Card.SUITS[0]);
+            luckCard.setValue(3);
+            luckCard.setSuit(Card.SUITS[0]);
+            
+            System.out.println("card value = " + luckCard.getValue() + "\n" +
+                    "card suit = " + luckCard.getSuit());
            
           if (magicHand[0] ==  UserC)
               System.out.println("The cards are the same!");

@@ -17,7 +17,7 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
-        Card luckycard = new Card( 12 , "Hearts");
+        Card luckycard = new Card( 12 , "Clubs");
         
         for (int i=0; i<magicHand.length; i++)
         {

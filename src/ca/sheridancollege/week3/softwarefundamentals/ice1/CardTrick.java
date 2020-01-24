@@ -11,6 +11,9 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author 
  */
+
+// STUDENT NO. 
+import java.util.Scanner;
 public class CardTrick {
     
     public static void main(String[] args)
@@ -19,10 +22,18 @@ public class CardTrick {
         
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            Card c = new Card();           
+            c.setValue((int) (Math.random()*13 ));
+           c.setSuit(Card.SUITS[(int)(Math.random()*3)]);
+           magicHand[i] =  c;
         }
+        
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the no.");
+        int Num = input.nextInt();
+        for(int j = 0; j < magicHand.length;j++);
+        System.out.println(Num);
+        
         
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here

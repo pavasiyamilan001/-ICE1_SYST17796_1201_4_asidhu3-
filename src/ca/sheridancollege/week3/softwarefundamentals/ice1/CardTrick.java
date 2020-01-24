@@ -16,6 +16,7 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
+	Scanner scanner=new Scanner(System.in);
         Card[] magicHand = new Card[7];
         int value;
         String Suit;
@@ -23,22 +24,34 @@ public class CardTrick {
         Card c = new Card();
         c.getValue();
         c.getSuit();
+	    
+	int rvalue=(int)(Math.round(Math.random()*12));
+        int rsuit=(int)(Math.round(Math.random()*3));     
         
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card();
+            //Card c = new Card();
             //c.setValue(insert call to random number generator here)
-            value=(int)(Math.round(Math.random()*12);
+          
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
         //insert code to ask the user for Card value and suit, create their card
-        Scanner scanner=new Scanner(System.in);
+	    
         System.out.println("Enter the Card Value of cars between 1-13");
-        value=scanner.nextInt();
+	System.out.println("Enter the Suits from Hearts,Diamonds,Spades and Clubs");
+	for(int j=0;j<magicHand.length; j++)
+	{
+		 System.out.println("Enter Card number:");
+		value=scanner.nextInt();
+		 System.out.println("Enter Crd Suit:");
+		Suit=scanner.nextLine();
+	}
+       
+        
 	
-        System.out.println("Enter the Suits from Hearts,Diamonds,Spades and Clubs");
-        Suit=scanner.nextLine();
+        
+        
        
         // and search magicHand here
         //Then report the result here

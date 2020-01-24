@@ -3,6 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import java.util.Scanner;
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
 /**
@@ -16,6 +17,12 @@ public class CardTrick {
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
+        int value;
+        String Suit;
+        Card[] magicHand = new Card[7];
+        Card c = new Card();
+        c.getValue();
+        c.getSuit();
         
         for (int i=0; i<magicHand.length; i++)
         {
@@ -26,6 +33,13 @@ public class CardTrick {
         }
         
         //insert code to ask the user for Card value and suit, create their card
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter the Card Value of cars between 1-13");
+        value=scanner.nextInt();
+	
+        System.out.println("Enter the Suits from Hearts,Diamonds,Spades and Clubs");
+        Suit=scanner.nextLine();
+       
         // and search magicHand here
         //Then report the result here
     }

@@ -44,7 +44,7 @@ public class CardTrick {
         System.out.print("What is the numerical value of your card(1 - 13): ");
         numVal = input.nextInt();
         userCard.setValue(numVal);
-        System.out.print("What is the Suit of your card(0 = Clubs, 1 = Hearts, 2 = Diamonds, 3 = Spades: ");
+        System.out.print("What is the Suit of your card(0 = Hearts, 1 = Diamonds, 2 = Spades, 3 = Clubs: ");
         suitVal = input.nextInt();
         userCard.setSuit(Card.SUITS[(suitVal)]);
         
@@ -56,6 +56,8 @@ public class CardTrick {
         else{
             System.out.println("Your card did not match any of the Magic Hand");
         }
+        
+        System.out.println("Lucky card is: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
         
     }
     

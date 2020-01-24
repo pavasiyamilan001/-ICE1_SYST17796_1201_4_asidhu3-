@@ -53,7 +53,9 @@ public class CardTrick {
                 
                 // If element is found.
                 found = "Card found: " + handJoined;
+                break;
             } // if
+            
         } // for "a."
         
         //Then report the result here

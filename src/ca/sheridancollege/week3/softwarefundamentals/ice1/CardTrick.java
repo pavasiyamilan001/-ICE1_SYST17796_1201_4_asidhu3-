@@ -42,6 +42,8 @@ public class CardTrick {
         
         suit = input.nextInt();
         System.out.println("choose any suit from the 4 main suits");
+                        
+        print suit;
         
         
         

@@ -21,13 +21,16 @@ public class CardTrick {
         {
             Card c = new Card();
             
-            //c.setValue(insert call to random number generator here)
-            //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-        }
-        
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        //Then report the result here
+             int i = 0;
+    
+   	 
+   	   
+
+   	    for (int suit = 0; suit <= 3; suit++) {
+    for (int rank = 1; rank <= 13; rank++) 
+    {
+        card[i] = new Card(rank, suit);
+        i++;
     }
     
 }

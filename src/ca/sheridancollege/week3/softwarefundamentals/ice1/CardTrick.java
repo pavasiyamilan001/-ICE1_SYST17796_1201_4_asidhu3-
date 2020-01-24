@@ -32,6 +32,10 @@ public class CardTrick {
             c.setSuit(Card.SUITS[(int)(Math.random()* 0 + 3)]);
         }
         
+        Card luckyCard = new Card();
+        luckyCard.setValue(11);
+        luckyCard.setSuit(Card.SUITS[2]);
+        
         //insert code to ask the user for Card value and suit, create their card
         Card userCard = new Card();
         

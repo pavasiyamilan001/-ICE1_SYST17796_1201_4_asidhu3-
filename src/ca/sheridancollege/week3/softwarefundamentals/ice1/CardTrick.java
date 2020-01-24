@@ -28,6 +28,7 @@ public class CardTrick {
 
    	    for (int suit = 0; suit <= 3; suit++) {
     for (int rank = 1; rank <= 13; rank++) 
+        a[i]=Math.random();
     {
         card[i] = new Card(rank, suit);
         i++;

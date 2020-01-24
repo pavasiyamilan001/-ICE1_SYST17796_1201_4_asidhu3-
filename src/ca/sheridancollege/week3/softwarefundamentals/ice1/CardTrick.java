@@ -39,7 +39,7 @@ public class CardTrick {
         
         Card LuckyCard = new Card();
         int random = (int)(Math.random() * 13 + 1);
-        System.out.println(LucyCard);
+        System.out.println("LucyCard");
         
         
     }

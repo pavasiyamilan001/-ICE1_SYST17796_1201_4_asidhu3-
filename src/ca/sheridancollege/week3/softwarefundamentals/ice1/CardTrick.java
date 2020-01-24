@@ -18,7 +18,7 @@ public class CardTrick {
     {
         Scanner reader = new Scanner(System.in);
         Card[] magicHand = new Card[7];
-        Card luckyCard = new Card;
+        Card luckyCard = new Card();
         luckyCard.setValue(13);
         luckyCard.setSuit("Hearts");
         
@@ -42,7 +42,8 @@ public class CardTrick {
         card.setValue(cardValue);
         String userSuit=card.getSuit();
         int userValue=card.getValue();
-        
+        System.out.println(luckyCard.getValue());
+        System.out.println(luckyCard.getSuit());
         for (int i=0;i<magicHand.length;i++){
             if (magicHand[i].getSuit().equals(userSuit)&& magicHand[i].getValue()==userValue){
                 System.out.println("You have matched with the magic hand!");

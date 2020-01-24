@@ -28,6 +28,7 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         Random _random=new Random();
         int[] Comp=new int[7];
+        Card luckyCard=new Card();
         
         for (int i=0; i<magicHand.length; i++)
         {
@@ -38,8 +39,10 @@ public class CardTrick {
             c.setValue(_random.nextInt((13)+1));
             c.setSuit(Card.SUITS[_random.nextInt(3)]);
             
-            luckyCard=c.setValue(7);
-            luckyCard=c.setSuite("Diamond");
+            luckyCard.setValue(7);
+            luckyCard.setSuite("Diamond");
+            
+            System.out.prinltf("card value: %d, suite: %s",luckyCard.getValue(),luckyCard.getSuite());
             /*Harrd Coded Lucky Card*/
             
           

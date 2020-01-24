@@ -38,6 +38,10 @@ public class CardTrick {
             c.setValue(_random.nextInt((13)+1));
             c.setSuit(Card.SUITS[_random.nextInt(3)]);
             
+            luckyCard=c.setValue(7);
+            luckyCard=c.setSuite("Diamond");
+            /*Harrd Coded Lucky Card*/
+            
           
         }
         
